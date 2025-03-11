@@ -1,0 +1,56 @@
+/* Add these styles to your index.css */
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #34d399 !important; /* emerald-400 */
+}
+.img-container{
+  height: 30px;
+  width: 100px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg0kq9_IdMfYDhjk7x3A2eIPlSr3O8t4YP8Q&s");
+  background-size: cover;
+  object-fit:fill;
+  background-position: center;
+ 
+}
+.text-emerald-400 {
+  color: #34d399 !important;
+  
+  font-size: 18px;
+  text-decoration: underline;
+  transition: all 0.1s ease-in;
+}
+
+.bg-emerald-400 {
+  background-color: #34d399;
+}
+
+/* Dark mode styles */
+.navbar-dark {
+  background-color: #1a1a1a !important;
+}
+
+.navbar-dark .nav-link {
+  color: #ffffff;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .navbar-collapse {
+      padding: 1rem 0;
+  }
+  
+  .navbar-nav {
+      gap: 0.5rem;
+  }
+}

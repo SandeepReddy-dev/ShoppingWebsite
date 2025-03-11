@@ -1,0 +1,101 @@
+/* Paper Plane Icon */
+
+
+
+  
+  /* Subscribe Text */
+  .subscribe-text {
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .dot {
+    color: red;
+  }
+  
+  /* Email Input */
+  .email-input {
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin: 15px 0;
+    outline: none;
+    text-align: center;
+    padding: 8px;
+    font-size: 1rem;
+  }
+  
+  /* Subscribe Button */
+  .subscribe-btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .subscribe-btn:hover {
+    background-color: #5df394;
+    transform: scale(1.01);
+    box-shadow: 0px 0px 15px;
+  }
+  .s-submit-btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #1097e4;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .s-submit-btn:hover {
+    background-color: #0b2edc;
+    transform: scale(1.01);
+    box-shadow: 0px 0px 15px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .subscribe-text {
+      font-size: 1.5rem;
+    }
+    .div-container{
+        margin: 5px !important;
+        padding: 5px !important;
+    }
+  
+   
+  }
+  
+  @media (max-width: 480px) {
+    .subscribe-text {
+      font-size: 1.2rem;
+    }
+  
+    .plane-icon {
+      width: 40px;
+    }
+  
+    .email-input {
+        width: 200px;
+        font-size: 0.9rem;
+      }
+    
+      .subscribe-btn {
+        width: 150px;
+        font-size: 0.9rem;
+      }
+      .s-submit-btn {
+          width: 150px;
+          font-size: 0.9rem;
+        }
+
+  }
+  

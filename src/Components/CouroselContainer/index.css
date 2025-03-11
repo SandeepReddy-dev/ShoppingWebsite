@@ -1,0 +1,176 @@
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0px;
+    margin-bottom: 0px;
+    }
+    
+.div1 {
+    grid-column: span 3;
+    grid-row: span 4;
+    background-image: url("https://i.pinimg.com/736x/c5/17/52/c517521e4f7b1b6bd11f064d8eddbfd6.jpg");
+    background-size: cover !important;
+}
+
+.image-slider {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    width: 400%; /* Since we have 4 images */
+    height: 100%;
+    animation: slideAnimation 15s infinite ease ;
+}
+
+.slide {
+    flex: 1;
+    background-size: fit;
+    background-position: center;
+}
+
+.slide1 { background-image: url("https://i0.wp.com/www.indiaretailing.com/wp-content/uploads/2023/05/Wrogn.jpg"); background-size: cover !important;}
+.slide2 { background-image: url("https://i.pinimg.com/736x/cf/8a/48/cf8a48dfae67901c58e5ae3d9660fb88.jpg");background-size: cover !important; }
+.slide3 { background-image: url("https://i.pinimg.com/736x/55/ac/4f/55ac4f1f40438cd4cc77b33f23652d6a.jpg"); 
+    background-size: cover !important;}
+.slide4 { background-image: url("https://i.pinimg.com/736x/3d/04/48/3d04481f03158fb4bcf65ebbb7b63f76.jpg");
+background-size: cover !important; }
+
+@keyframes slideAnimation {
+    0% { transform: translateX(0%); }
+    10% { transform: translateX(-25%); }
+    20% { transform: translateX(-50%); }
+    30% { transform: translateX(-75%); }
+    45% { transform: translateX(-100%); } 
+    60% { transform: translateX(-75%); }
+    70% { transform: translateX(-50%); }
+    85% { transform: translateX(-25%); }
+    95% { transform: translateX(0%); }
+   
+    100% { transform: translateX(0%); }/* Loop back */
+}
+
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+.div4 {
+    grid-column: span 5 / span 5;
+    grid-row-start: 5;
+}  
+.carousel-c{
+    width: 100%;
+    height: 50%;
+}
+.corousel-image{
+    height: 100%;
+    width: 100%;
+}
+.corousel-image-c{
+    height: 120%;
+    width: 100%;
+}
+/* Purple Background */
+.bg-purple {
+    background-color: #6a0dad;
+    font-size: 50px; /* Deep Purple */
+  }
+  
+
+  /* Main Container */
+.discount-container {
+    background-color: #6a0dad; /* Deep Purple */
+    position: relative;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    overflow: hidden;
+  }
+  
+  /* Floating Bubbles */
+  .bubble {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: float 6s infinite alternate ease-in-out;
+  }
+  
+  /* Randomized Bubble Sizes & Positions */
+  .bubble-1 { width: 20px; height: 20px; left: 5%; animation-duration: 4s; background-color: red; }
+  .bubble-2 { width: 30px; height: 30px; left: 15%; animation-duration: 5s; background-color: blue;}
+  .bubble-3 { width: 25px; height: 25px; right: 10%; animation-duration: 6s;background-color: green; }
+  .bubble-4 { width: 35px; height: 35px; left: 40%; animation-duration: 7s; background-color: blue;}
+  .bubble-5 { width: 40px; height: 40px; right: 25%; animation-duration: 8s; background-color: yellow;}
+  .bubble-6 { width: 20px; height: 20px; left: 60%; animation-duration: 4.5s;background-color: green; }
+  .bubble-7 { width: 30px; height: 30px; right: 50%; animation-duration: 6.5s;background-color: lightskyblue; }
+  .bubble-8 { width: 25px; height: 25px; left: 80%; animation-duration: 5.5s; background-color: yellow;}
+  .bubble-9 { width: 35px; height: 35px; right: 70%; animation-duration: 7.5s; background-color: red;}
+  .bubble-10 { width: 20px; height: 20px; left: 90%; animation-duration: 6s; background-color: violet;}
+  
+  /* Floating Animation */
+  @keyframes float {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(70px, -100px);
+    }
+    50% {
+      transform: translate(-100px, 100px);
+    }
+    75% {
+      transform: translate(45px, -125px);
+    }
+    100% {
+      transform: translate(-15px, 125px);
+    }
+  }
+  @media (max-width: 977px){
+.div4{
+    display: none !important;
+    border: none !important;
+}
+  }
+  @media (max-width: 768px) {
+    .side-img {
+        display: none;
+    }
+    .parent {
+        width: 100%;
+        height: 40vh; /* Full viewport height */
+        margin-bottom: 0px;
+        display: flex; /* Use flex to center div1 */
+        align-items: center;
+        justify-content: center;
+    }
+    .div1 {
+        width: 100%;
+        height: 100%;
+        background-image: url("https://i.pinimg.com/736x/c5/17/52/c517521e4f7b1b6bd11f064d8eddbfd6.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .div2, 
+    .div3, 
+    .div4 {
+        display: none !important;
+    }
+}

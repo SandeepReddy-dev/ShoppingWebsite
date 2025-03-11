@@ -1,0 +1,229 @@
+/* Update your products.css with these styles */
+
+.product-card {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(144, 234, 178, 0.1);
+  transition: all 0.5s ease-in-out; 
+  width: 300px;
+  margin: auto;
+  height: 430px;
+  
+}
+.nr-img{
+  height: 350px;
+  width: 500px;
+  margin-bottom:20px ;
+}
+.nr-c{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-card:hover {
+  transform: scale(105%);
+  box-shadow: 5px 5px 25px black;
+}
+
+
+.p-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  width: 80%;
+  height: 250px !important;
+  object-fit: contain;
+ 
+  
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  transition: transform 0.3s ease;
+  margin: auto !important;
+}
+
+.product-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.p-product-title {
+  font-size: 16px;
+  font-weight: 600;
+  }
+.bag-dlte-icon{
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.bag:hover:hover{
+  background-color: #2d99f7 !important;
+  box-shadow: 0px 0px 20px gray;
+}
+.dlte:hover{
+  background-color: #f33e3e !important;
+  box-shadow: 0px 0px 20px gray;
+}
+.rating {
+  margin: 8px 0;
+  color: #ffd700;
+}
+
+.star-filled {
+  color: #ffd700;
+  font-size: 14px;
+}
+
+.star-empty {
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 600;
+ 
+  margin: 8px 0;
+}
+
+.p-add-to-cart-btn {
+  width: 100px;
+  height: 40px;
+  padding: 1px;
+  background: #34d399;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.p-add-to-cart-btn:hover {
+  background-color: #12e99e;
+  box-shadow: 0px 0px 20px gray;
+  
+}
+.go-to-cart-btn{
+background-color: #220bec94;
+}
+.go-to-cart-btn:hover{
+background-color: #00b3ff;
+}
+
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 240px;
+  }
+ 
+  .p-add-to-cart-btn {
+    padding: 2px;
+    font-size: 15px;
+    width: 90px;
+  }
+  .bag-dlte-icon{
+    font-size: 15px;
+    width: 35px;
+    padding: 2px;
+  }
+
+  .p-product-title {
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+}
+/* Keep your existing responsive styles but update these values */
+@media (max-width: 576px) {
+  .product-card {
+    max-width: 180px;
+    height: 290px;
+    padding: 5px;
+    margin: 2px;
+    display: flex !important;
+  flex-direction: column;
+  justify-content: space-evenly;
+  }
+  
+  .p-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    width: 80%;
+    height: 160px !important;
+    object-fit: contain;
+   
+    
+  }
+  .cart-btn{
+    display: none !important;
+  }
+  .add-to-cart-btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+  .rating {
+    
+    color: #ffd700;
+  }
+  
+  .star-filled {
+    color: #ffd700;
+    font-size: 10px;
+  }
+  
+  .star-empty {
+    color: #e0e0e0;
+    font-size: 10px;
+  }
+  
+  .price {
+    font-size: 10px;
+    font-weight: 400;
+   
+   
+  }
+  
+  .view-btn {
+    height: 30px;
+    width: 80px;
+    font-size: 15px;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  .p-product-title {
+    font-size: 14px;
+    font-weight: 500;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.nr-img{
+  height: 150px;
+  width: 200px;
+  margin-bottom:20px ;
+}
+}
+
+/* Keep rest of your existing CSS */

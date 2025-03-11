@@ -1,0 +1,182 @@
+
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+background-color: white;  width: 45%;
+
+  background-size: cover;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px gray;
+  font-size: larger;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: all 0.5s ease-in-out, background-image 1.5s ease-in-out;
+}
+.about-us:hover {
+  transform: scale(102%);
+  box-shadow: 0px 0px 15px #373738;
+
+}
+.logo-light {
+  font-size: 100px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff; /* Black text for depth */
+  
+  text-shadow: 
+    0 0 10px #00ff00,   /* Bright Green glow */
+    0 0 20px #00ff00,   
+    0 0 30px #ffffff,   /* White outer glow */
+    0 0 40px #ffffff,   
+    0 0 50px #00ff00,   /* Extended Green glow */
+    0 0 60px #675757;   /* Subtle Black outline */
+}
+.logo-dark {
+  font-size: 80px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  color: #01120b; /* Black text for depth */
+  
+  text-shadow: 
+    0 0 10px #00ff00,   /* Bright Green glow */
+    0 0 20px #00ff00,   
+    0 0 30px #ffffff,   /* White outer glow */
+    0 0 40px #ffffff,   
+    0 0 50px #00ff00,   /* Extended Green glow */
+    0 0 60px #000000;   /* Subtle Black outline */
+}
+
+
+
+.logo-c{
+  background-image: url("https://i.pinimg.com/736x/3a/22/f5/3a22f54c3ad8414b48ee95a0f1eb60cb.jpg");
+  background-size: fit;
+  
+  width: 90vw;
+  height: 30vh;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin: auto;
+  box-shadow: 0px 0px 20px rgb(14, 14, 14);
+}
+.why-us-card {
+  height: 300px;
+  width: 280px;
+  background-color: #4888c9;
+  color: white;
+  border-radius: 20px;
+  margin: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+  fill: brightness(50%);
+  padding: 15px;
+
+  transition: transform 0.5s ease-in, box-shadow 0.5s ease-in;
+}
+.why-us-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 50px #28fc03;
+}
+.why-us-card-c {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+  padding: 0px !important;
+}
+.unique-c {
+  width: 90vw;
+  align-self: center;
+  margin: auto !important;
+  margin-bottom: 20px;
+}
+.contact {
+  background-color: whitesmoke;
+  width: 45%;
+
+  background-size: cover;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px gray;
+  font-size: larger;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: all 0.5s ease-in-out, background-image 1.5s ease-in-out;
+  
+}
+.cotact:hover {
+  transform: scale(102%);
+  box-shadow: 0px 0px 15px #373738;
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .logo-light{
+    font-size: 60px;
+  }
+  .logo-dark{
+    font-size: 60px;
+  }
+  .about-us {
+    width: 90%;
+  }
+  .contact {
+    width: 90%;
+  }
+  .why-us-card-c {
+    flex-wrap: wrap;
+    width: 650px;
+  }
+  .unique-c {
+    width: 90vw;
+  }
+  .about-us:hover {
+    transform: scale(102%);
+    box-shadow: 0px 0px 15px #373738;
+  }
+    
+}
+@media screen and (max-width: 570px) {
+  .logo-light{
+    font-size: 40px;
+  }
+  .logo-dark{
+    font-size: 40px;
+  }
+    .top-c{
+display: flex;
+flex-direction: column !important;
+    }
+  .about-us {
+    width: 90%;
+  }
+  .contact {
+    width: 90%;
+  }
+  .why-us-card {
+    height: 300px;
+    width: 300px;}
+    .unique-c{
+        justify-content: center;
+        align-items: center;
+    }
+  .why-us-card-c {
+    width: 90vw;
+    flex-direction: column;
+  }
+  .about-us:hover {
+    transform: scale(102%);
+    box-shadow: 0px 0px 15px #373738;
+  }
+    
+}

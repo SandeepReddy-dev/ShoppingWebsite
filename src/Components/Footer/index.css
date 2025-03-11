@@ -1,0 +1,193 @@
+/* Footer.css */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+   width: 100%;
+   height: 100%;
+    padding: 20px 40px;
+    flex-wrap: wrap; /* For responsiveness */
+    font-family: Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .footer-section h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin: 5px 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  
+  .list-elements{
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+  } 
+  .list-elements:hover{
+    font-size: 16px;
+    text-decoration: underline;
+  } 
+  
+  .footer-guarantees {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  @media (min-width: 1200px) {
+    .product-image, .image-c {
+      height: 240px;
+      width: 180px;
+    }
+  
+    .product-card {
+      padding: 20px;
+    }
+  
+    .product-title {
+      font-size: 18px;
+      width: 140px;
+    }
+  
+    .footer-container {
+      padding: 30px 60px;
+    }
+  
+    .footer-section, .footer-guarantees {
+      margin: 20px;
+    }
+  }
+  
+  /* Medium Devices (Tablets, 768px to 1199px) */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .product-image, .image-c {
+      height: 220px;
+      width: 170px;
+    }
+  
+    .product-card {
+      padding: 18px;
+    }
+  
+    .product-title {
+      font-size: 16px;
+      width: 130px;
+    }
+  
+    .footer-container {
+      padding: 25px 50px;
+      flex-direction: row;
+      text-align: left;
+    }
+  
+    .footer-section, .footer-guarantees {
+      margin: 15px;
+    }
+  }
+  
+  /* Small Devices (Phones, 480px to 767px) */
+  @media (min-width: 480px) and (max-width: 767px) {
+    .product-image, .image-c {
+      height: 180px;
+      width: 140px;
+    }
+  
+    .product-card {
+      padding: 12px;
+    }
+  
+    .product-title {
+      font-size: 14px;
+      width: 110px;
+    }
+  
+    .footer-container {
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-section, .footer-guarantees {
+      margin: 10px 0;
+    }
+  
+    .social-icons i {
+      margin: 5px;
+    }
+  }
+  
+  /* Extra Small Devices (Less than 480px) */
+  @media (max-width: 479px) {
+    .product-image {
+      height: 120px;
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    .image-c {
+      height: 130px;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .product-card {
+      padding: 10px;
+      height: auto;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-title {
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+      white-space: normal;
+      overflow: visible;
+      text-overflow: unset;
+    }
+  
+    .products-c {
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  
+    .footer-container {
+      padding: 15px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-section, .footer-guarantees {
+      margin: 8px 0;
+    }
+  
+    .social-icons i {
+      margin: 3px;
+    }
+  } 
+  
+  
